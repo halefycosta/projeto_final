@@ -12,4 +12,7 @@ print(f"Database Host: {db_host}")
 print(f"Database User: {db_user}")
 print(f"Database Password: {db_password}")
 print(f"Conectando em {db_host} com o usuário {db_user}...")
-print("Credenciais carregadas com sucesso!")
+if db_host and db_user and db_password:
+    print("Credenciais carregadas com sucesso!")
+else:
+    print("Erro ao carregar credenciais do banco de dados.")
